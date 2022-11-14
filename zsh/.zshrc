@@ -41,3 +41,31 @@ fi
 if [ -e ~/.zshrc.local ] ; then
   . ~/.zshrc.local
 fi
+
+export PATH=/opt/homebrew/bin:$PATH
+
+function select-history() {
+    local tac
+    if which tac > /dev/null; then
+        tac="tac"
+    else
+        tac="tail -r"
+    fi
+    BUFFER=$(fc -l -n 1 | eval $tac | peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle -R -c
+}
+zle -N select-history
+bindkey '^r' select-history
+
+alias g='cd $(ghq root)/$(ghq list | peco)'
+
+alias -g lb='`git branch | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
+
+export GOPATH=$(go env GOPATH)
+export PATH="$GOPATH/bin:$PATH"
+
+eval "$(direnv hook bash)"
+export PATH="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin:$PATH"
+
+alias gi='github .'

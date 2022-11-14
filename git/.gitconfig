@@ -65,3 +65,6 @@
 	shallow = clone --depth 1
 	skip = update-index --skip-worktree
 	patch = format-patch -1 HEAD
+[user]
+	name = Genki
+	email = genk1@users.noreply.github.com
