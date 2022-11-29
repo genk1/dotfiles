@@ -5,7 +5,7 @@ https://dotfiles.github.io/
 ## clone!
 
 ```sh
-git clone git@github.com:shuji-koike/dotfiles.git ~/.dotfiles
+git clone git@github.com:genk1/dotfiles.git ~/.dotfiles
 ```
 
 ## link!
