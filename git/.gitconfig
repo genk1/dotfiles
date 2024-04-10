@@ -1,7 +1,7 @@
 [include]
 	path = .gitconfig.local
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.dotfiles/git/.gitignore
 	editor = vim -c \"set fenc=utf-8\"
 	ignorecase = false
 	quotepath = false
@@ -66,5 +66,7 @@
 	skip = update-index --skip-worktree
 	patch = format-patch -1 HEAD
 [user]
-	name = Genki
+	name = genk1
 	email = genk1@users.noreply.github.com
+[includeIf "gitdir:~/zn"]
+   path = ~/.gitconfig_sub
