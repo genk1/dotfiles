@@ -1,13 +1,18 @@
 {
   "diffEditor.renderSideBySide": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
+  "eslint.format.enable": true,
+  "eslint.options": {},
+  "eslint.rules.customizations": [],
+  "eslint.trace.server": "off",
+  "editor.formatOnSave": true,
+  "eslint.alwaysShowStatus": true,
   "editor.columnSelection": false,
   "editor.emptySelectionClipboard": true,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.fontSize": 14,
-  "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "alt",
   "editor.renderControlCharacters": true,
@@ -15,7 +20,6 @@
   "editor.scrollBeyondLastLine": false,
   "editor.tabSize": 2,
   "emmet.showAbbreviationSuggestions": false,
-  "eslint.run": "onSave",
   "explorer.autoReveal": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -33,7 +37,6 @@
   "npm.enableRunFromFolder": true,
   "npm.runInTerminal": false,
   "npm.scriptExplorerAction": "run",
-  "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
     "statusBar.background": "#1A1A1A",
     "statusBar.debuggingBackground": "#263238",
@@ -61,5 +64,36 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "redhat.telemetry.enabled": false,
+  "git.openRepositoryInParentFolders": "never",
+  "react-native-tools.showUserTips": false,
+  "reactSnippets.settings.prettierEnabled": true,
+  "workbench.colorTheme": "GitHub Dark",
+  "cSpell.userWords": [
+    "checkin",
+    "datetime",
+    "deepl",
+    "fullname",
+    "pokemons",
+    "signup",
+    "zipcode"
+  ],
+  "cSpell.enableFiletypes": ["ruby"],
+  "liveSassCompile.settings.autoprefix": [],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../css",
+      "savePathReplacementPairs": null
+    }
+  ],
+  "editor.inlineSuggest.enabled": true,
+  "cSpell.languageSettings": [],
+  "workbench.settings.applyToAllProfiles": [],
+  "notebook.editorOptionsCustomizations": {},
+  "go.toolsManagement.autoUpdate": true,
+  "editor.semanticTokenColorCustomizations": {},
+  "javascript.updateImportsOnFileMove.enabled": "never"
 }

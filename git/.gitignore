@@ -27,15 +27,6 @@ flow-typed
 #--
 
 *.prj
-*.csv
-
-#--
-
-*.jpg
-*.png
-*.gif
-*.ai
-*.pdf
 
 #--
 
@@ -75,5 +66,3 @@ tmp.*
 #--
 
 *.dem
-
-.*.json
